@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoBajío - Dashboard / Mapa</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="app-layout">
+
+  <div class="navbar">
+    <div class="nav-brand">EcoBajío</div>
+    <div class="nav-links">
+      <a href="dashboard.html" class="active">Mapa</a>
+      <a href="registrar-arbol.html">Registrar Árbol</a>
+      <a href="alertas.html">Mis Alertas <span class="badge">1</span></a>
+      <a href="evidencia.html">Evidencias</a>
+    </div>
+    <div class="user-menu">
+      <a href="index.html" class="btn-logout">Cerrar Sesión</a>
+    </div>
+  </div>
+
+  
+  <div class="dashboard-main">
+    
+
+    <div class="sidebar">
+      <h2>Árboles en Monitoreo</h2>
+
+      <div class="tree-card">
+        <h3>Mezquite #104</h3>
+        <p><strong>Especie:</strong> Mezquite Nativo</p>
+        <p><strong>Ubicación:</strong> Zona Centro, León</p>
+        <p><strong>Estado:</strong> <span class="status-warning">Estrés Hídrico ⚠️</span></p>
+        <a href="evidencia.html" class="btn-small">Subir Evidencia</a>
+      </div>
+
+      <div class="tree-card">
+        <h3>Palo Dulce #88</h3>
+        <p><strong>Especie:</strong> Palo Dulce</p>
+        <p><strong>Ubicación:</strong> La Martinica, León</p>
+        <p><strong>Estado:</strong> <span class="status-ok">Validado ✅</span></p>
+      </div>
+
+      <a href="registrar-arbol.html" class="btn-primary" style="display:block; text-align:center; text-decoration:none; margin-top:20px;">+ Registrar Árbol</a>
+    </div>
+
+    
+    <div class="map-container">
+      <div id="map"></div>
+    </div>
+
+  </div>
+
+ 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+   
+    const map = L.map('map').setView([21.1221, -101.6826], 13);
+
+    
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      maxZoom: 19
+    }).addTo(map);
+
+    
+    L.marker([21.1221, -101.6826]).addTo(map).bindPopup('<b>Mezquite #104</b><br>Estado: Estrés Hídrico ⚠️');
+    L.marker([21.1350, -101.6700]).addTo(map).bindPopup('<b>Palo Dulce #88</b><br>Estado: Validado ✅');
+  </script>
+
+</body>
+</html>

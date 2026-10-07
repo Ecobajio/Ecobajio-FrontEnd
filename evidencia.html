@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoBajío - Subir Evidencia</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="app-layout">
+
+  
+  <div class="navbar">
+    <div class="nav-brand">EcoBajío</div>
+    <div class="nav-links">
+      <a href="dashboard.html">Mapa</a>
+      <a href="registrar-arbol.html">Registrar Árbol</a>
+      <a href="alertas.html">Mis Alertas <span class="badge">1</span></a>
+      <a href="evidencia.html" class="active">Evidencias</a>
+    </div>
+    <div class="user-menu">
+      <a href="index.html" class="btn-logout">Cerrar Sesión</a>
+    </div>
+  </div>
+
+  
+  <div class="form-page">
+    <div class="form-container">
+      <h2>Subir Evidencia de Riego</h2>
+      
+      
+      <form action="alertas.html" method="GET">
+        
+        <div class="form-group">
+          <label>Árbol a reportar</label>
+          <select name="arbol">
+            <option value="104">Mezquite #104 (Zona Centro)</option>
+            <option value="88">Palo Dulce #88 (La Martinica)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Acción Realizada</label>
+          <select name="accion">
+            <option value="riego">Riego completo</option>
+            <option value="poda">Poda preventiva</option>
+            <option value="revision">Revisión de plaga</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Sube tu fotografía</label>
+          
+          <input type="file" name="foto" required style="background: var(--bg-color); color: var(--text-main); padding: 10px; border-radius: 5px; width: 100%;">
+        </div>
+
+        <div class="form-group">
+          <label>Comentarios adicionales (Opcional)</label>
+          <input type="text" name="comentarios" placeholder="Ej. El árbol se ve más verde hoy...">
+        </div>
+
+        <button type="submit" class="btn-primary">Enviar Evidencia</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

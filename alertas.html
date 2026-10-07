@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoBajío - Alertas</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="app-layout">
+
+  <div class="navbar">
+    <div class="nav-brand">EcoBajío</div>
+    <div class="nav-links">
+      <a href="dashboard.html">Mapa</a>
+      <a href="registrar-arbol.html">Registrar Árbol</a>
+      <a href="alertas.html" class="active">Mis Alertas <span class="badge">1</span></a>
+      <a href="evidencia.html">Evidencias</a>
+    </div>
+    <div class="user-menu">
+      <a href="index.html" class="btn-logout">Cerrar Sesión</a>
+    </div>
+  </div>
+
+  <div style="padding: 40px 20px; max-width: 800px; margin: 0 auto; width: 100%;">
+    <h2 style="color: var(--accent-green); margin-bottom: 20px;">Alertas de Riego y Mantenimiento</h2>
+    
+    
+    <div class="tree-card" style="border-left: 5px solid #ff4d4d; box-shadow: 0 4px 10px rgba(255, 77, 77, 0.2);">
+      <h3> Urge Riego - Mezquite #104</h3>
+      <p><strong>Ubicación:</strong> Zona Centro, León</p>
+      <p>El árbol lleva más de 5 días sin registro de riego en el sistema y presenta alto estrés hídrico.</p>
+      <br>
+      <a href="evidencia.html" class="btn-primary" style="text-decoration:none;">Registrar Riego ahora</a>
+    </div>
+
+    
+    <div class="tree-card" style="border-left: 5px solid #ffcc00; margin-top: 20px;">
+      <h3> Revisión - Palo Dulce #88</h3>
+      <p><strong>Ubicación:</strong> La Martinica, León</p>
+      <p>Toca visita de mantenimiento preventivo esta semana para validar que no haya plaga.</p>
+    </div>
+  </div>
+
+</body>
+</html>
