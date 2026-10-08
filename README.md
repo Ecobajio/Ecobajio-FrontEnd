@@ -5,7 +5,7 @@
 **Grupo:** LDSM_402
 
 ## 1. Descripcion del Proyecto
-EcoBajio es una aplicacion web diseñada para mitigar el estres hidrico y las "islas de calor" en la ciudad de Leon, Guanajuato[cite: 2, 3]. La plataforma permite gestionar el registro, la geolocalizacion y la validacion comunitaria del riego de arboles nativos adoptados por los ciudadanos.
+EcoBajio es una aplicacion web diseñada para mitigar el estres hidrico y las "islas de calor" en la ciudad de Leon, Guanajuato. La plataforma permite gestionar el registro, la geolocalizacion y la validacion comunitaria del riego de arboles nativos adoptados por los ciudadanos.
 
 ## 2. Objetivo de la Actividad
 Construir, de manera colaborativa, un prototipo front-end navegable aplicando HTML5 semantico y CSS3 personalizado. Este prototipo representa los requerimientos funcionales documentados en la Actividad 3, sin depender aun de un backend.
